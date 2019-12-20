@@ -31,18 +31,21 @@
 
     <v-content>
       <OrderList/>
+      <OrderItem/>
     </v-content>
   </v-app>
 </template>
 
 <script>
-import OrderList from './components/OrderList';
+import OrderList from './components/OrderList'
+import OrderItem from './components/OrderItem'
 
 export default {
   name: 'App',
 
   components: {
     OrderList,
+    OrderItem
   },
 
   data: () => ({
