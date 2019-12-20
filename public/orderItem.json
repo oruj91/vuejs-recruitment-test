@@ -1,0 +1,30 @@
+[
+  {
+    "orderID": "1",
+    "orderInfo": [
+      {
+        "number": "1",
+        "title": "Shawarma meat in bread",
+        "quantity": "1",
+        "itemPrice": "3.2",
+        "status": "preparing"
+      },
+      {
+        "number": "2",
+        "title": "Chicken cutlets",
+        "quantity": "2",
+        "itemPrice": "5.4",
+        "status": "given"
+      },
+      {
+        "number": "3",
+        "title": "shawarma chicken in bread",
+        "quantity": "1",
+        "itemPrice": "2.5",
+        "status": "canceled"
+      }
+    ],
+    "orderTime": "17:19",
+    "waitTimeInMinutes": "12"
+  }
+]

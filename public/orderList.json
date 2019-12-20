@@ -4,7 +4,7 @@
     "row": 2,
     "tableID": "a2",
     "waiterName": "Murtuz",
-    "orderStatus": "completed",
+    "orderStatus": "canceled",
     "orderPrice": "22",
     "orderCompletedTime": "19.12.2019, 15:19:53"
   },
@@ -76,7 +76,7 @@
     "row": 6,
     "tableID": "r4",
     "waiterName": "Zaur",
-    "orderStatus": "completed",
+    "orderStatus": "canceled",
     "orderPrice": "24.9",
     "orderCompletedTime": "19.12.2019, 21:19:22"
   },

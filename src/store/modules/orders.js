@@ -2,26 +2,18 @@ import axios from 'axios'
 
 export default {
   state: {
-    orders: [
-      // {
-      //   orderID: '1',
-      //   tableID: 'a2',
-      //   waiterName: 'Murtuz',
-      //   orderStatus: 'completed',
-      //   orderPrice: '22 AZN',
-      //   orderTime: '19.12.2019, 15:19:53',
-      // }
-    ]
+    orderList: [],
+    order: []
   },
   mutations: {
-    fetchOrders(state, payload) {
-      let orders = payload.map(el => {
+    fetchOrderList(state, payload) {
+      let orderList = payload.map(el => {
         el.orderID = Number(el.orderID)
         el.orderPrice = Number(el.orderPrice)
         return el
       })
 
-      orders.sort(function (a, b) {
+      orderList.sort(function (a, b) {
         if (a.orderCompletedTime !== '---' && b.orderCompletedTime !== '---') {
           a = Number(a.orderCompletedTime.match(/\d+/g).join(''))
           b = Number(b.orderCompletedTime.match(/\d+/g).join(''))
@@ -29,7 +21,7 @@ export default {
         return b - a
       })
 
-      orders.sort((a, b) => {
+      orderList.sort((a, b) => {
         a = a.orderStatus
         b = b.orderStatus
         if (a < b) {
@@ -41,28 +33,69 @@ export default {
         return 0
       })
 
-      state.orders = orders
+      state.orderList = orderList
+    },
+    fetchOrderItem(state, payload) {
+      state.order = payload
     }
   },
   actions: {
-    fetchOrders: async ({commit}) => {
-      await axios.get('http://localhost:8080/api.json')
+    fetchOrderList: async ({commit}) => {
+      await axios.get('http://localhost:8080/orderList.json')
         .then(r => {
-          commit('fetchOrders', r.data);
+          commit('fetchOrderList', r.data);
+        })
+    },
+    fetchOrderItem: async ({commit}, id) => {
+      await axios.get('http://localhost:8080/orderItem.json')
+        .then(r => {
+          let orders = []
+          const order = r.data.filter(el => Number(el.orderID) === id)[0]
+          const orderItemCount = order.orderInfo.length
+
+          for (let i = 0; i < orderItemCount; i++) {
+            const orderItem = {
+              number: order.orderInfo[i].number,
+              title: order.orderInfo[i].title,
+              quantity: order.orderInfo[i].quantity,
+              itemPrice: order.orderInfo[i].itemPrice,
+              status: order.orderInfo[i].status,
+              orderTime: order.orderTime,
+              waitTimeInMinutes: order.waitTimeInMinutes,
+            }
+            orders.push(orderItem)
+          }
+
+          commit('fetchOrderItem', orders)
         })
     },
   },
   getters: {
-    orders: state => {
-      return state.orders
+    orderList: state => {
+      return state.orderList
     },
-    orderTotal: state => {
-      const prices = state.orders.map(el => el.orderPrice)
+    orderListTotal: state => {
+      const prices = state.orderList.map(el => el.orderPrice)
 
       const sum = prices.reduce(function(previousValue, currentValue) {
         return previousValue + currentValue;
       }, 0);
       return sum.toFixed(2)
+    },
+    order: state => {
+      return state.order
+    },
+    orderItemTotal: state => {
+      const orderCount = state.order.length
+      let total = 0
+
+      for (let i = 0; i < orderCount; i++) {
+        const amount = state.order[i].itemPrice * state.order[i].quantity
+        total += amount
+      }
+
+      return total
     }
   }
 }
+
