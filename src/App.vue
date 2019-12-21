@@ -5,7 +5,7 @@
       color="primary"
       dark
     >
-      <router-link to="/" style="color: #fff; text-decoration: none">
+      <router-link :to="homePath" style="color: #fff; text-decoration: none">
         <div class="d-flex align-center">
           <v-img
             alt="Vuetify Logo"
@@ -39,10 +39,16 @@
 </template>
 
 <script>
+  import {homePath} from './api'
   import OrderList from './components/OrderList'
   import OrderItem from './components/OrderItem'
 
   export default {
+    data: function () {
+      return {
+        homePath
+      }
+    },
     name: 'App',
     components: {
       OrderList,

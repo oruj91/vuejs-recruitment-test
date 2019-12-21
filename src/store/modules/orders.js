@@ -1,3 +1,4 @@
+import {orderList, orderItem} from '../../api'
 import axios from 'axios'
 
 export default {
@@ -6,7 +7,7 @@ export default {
     order: []
   },
   mutations: {
-    fetchOrderList(state, payload) {
+    FETCH_ORDER_LIST(state, payload) {
       let orderList = payload.map(el => {
         el.orderID = Number(el.orderID)
         el.orderPrice = Number(el.orderPrice)
@@ -35,23 +36,21 @@ export default {
 
       state.orderList = orderList
     },
-    fetchOrderItem(state, payload) {
+    FETCH_ORDER_ITEM(state, payload) {
       state.order = payload
     }
   },
   actions: {
     fetchOrderList: async ({commit}) => {
-      await axios.get('http://localhost:8080/orderList.json')
-        .then(r => {
-          commit('fetchOrderList', r.data);
-        })
+      await axios.get(orderList)
+        .then(r => commit('FETCH_ORDER_LIST', r.data))
     },
     fetchOrderItem: async ({commit}, id) => {
-      await axios.get('http://localhost:8080/orderItem.json')
+      await axios.get(orderItem)
         .then(r => {
-          let orders = []
-          const order = r.data.filter(el => Number(el.orderID) === id)[0]
+          const order = r.data.filter(el => el.orderID === id)[0]
           const orderItemCount = order.orderInfo.length
+          let orders = []
 
           for (let i = 0; i < orderItemCount; i++) {
             const orderItem = {
@@ -66,7 +65,7 @@ export default {
             orders.push(orderItem)
           }
 
-          commit('fetchOrderItem', orders)
+          commit('FETCH_ORDER_ITEM', orders)
         })
     },
   },

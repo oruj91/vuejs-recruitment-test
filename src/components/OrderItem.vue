@@ -1,6 +1,13 @@
 <template>
   <v-container>
-    <v-layout text-center>
+<!--    <v-layout text-center>-->
+      <v-row  style="background-color: green" justify="center">
+        <v-col lg="10" xl="7" justify-center>
+          <v-layout justify-end>
+            <v-btn large color="primary">Primary</v-btn>
+          </v-layout>
+        </v-col>
+      </v-row>
       <v-row justify="center">
         <v-col lg="10" xl="7" v-if="order">
           <table-component
@@ -35,7 +42,7 @@
           </table-component>
         </v-col>
       </v-row>
-    </v-layout>
+<!--    </v-layout>-->
   </v-container>
 </template>
 
@@ -89,7 +96,9 @@
       }
     },
     mounted() {
-      this.$store.dispatch('fetchOrderItem', 1)
+      const id = this.$route.params.id
+
+      this.$store.dispatch('fetchOrderItem', id)
         .then(() => {
           this.order = this.$store.getters.order
         })
