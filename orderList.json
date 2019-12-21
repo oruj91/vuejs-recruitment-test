@@ -2,17 +2,17 @@
   {
     "orderID": "1",
     "row": 2,
-    "tableID": "a2",
-    "waiterName": "Murtuz",
-    "orderStatus": "canceled",
+    "table": "a2",
+    "waiter": "Murtuz",
+    "orderStatus": "completed",
     "orderPrice": "22",
     "orderCompletedTime": "19.12.2019, 15:19:53"
   },
   {
     "orderID": "2",
     "row": 1,
-    "tableID": "v3",
-    "waiterName": "Murtuz",
+    "table": "v3",
+    "waiter": "Murtuz",
     "orderStatus": "completed",
     "orderPrice": "41.3",
     "orderCompletedTime": "19.12.2019, 15:29:53"
@@ -20,17 +20,17 @@
   {
     "orderID": "3",
     "row": 2,
-    "tableID": "m2",
-    "waiterName": "Kamran",
-    "orderStatus": "not complited",
+    "table": "m2",
+    "waiter": "Kamran",
+    "orderStatus": "not completed",
     "orderPrice": "62.0",
     "orderCompletedTime": "---"
   },
   {
     "orderID": "4",
     "row": 3,
-    "tableID": "a3",
-    "waiterName": "Murtuz",
+    "table": "a3",
+    "waiter": "Murtuz",
     "orderStatus": "completed",
     "orderPrice": "14.3",
     "orderCompletedTime": "19.12.2019, 17:19:26"
@@ -38,17 +38,17 @@
   {
     "orderID": "5",
     "row": 4,
-    "tableID": "g3",
-    "waiterName": "Kamran",
-    "orderStatus": "not complited",
+    "table": "g3",
+    "waiter": "Kamran",
+    "orderStatus": "not completed",
     "orderPrice": "23.9",
     "orderCompletedTime": "---"
   },
   {
     "orderID": "6",
     "row": 1,
-    "tableID": "a4",
-    "waiterName": "Kamran",
+    "table": "a4",
+    "waiter": "Kamran",
     "orderStatus": "completed",
     "orderPrice": "7",
     "orderCompletedTime": "19.12.2019, 19:20:25"
@@ -56,17 +56,17 @@
   {
     "orderID": "7",
     "row": 5,
-    "tableID": "f23",
-    "waiterName": "Murtuz",
-    "orderStatus": "not complited",
+    "table": "f23",
+    "waiter": "Murtuz",
+    "orderStatus": "not completed",
     "orderPrice": "10",
     "orderCompletedTime": "---"
   },
   {
     "orderID": "8",
     "row": 7,
-    "tableID": "d10",
-    "waiterName": "Zaur",
+    "table": "d10",
+    "waiter": "Zaur",
     "orderStatus": "completed",
     "orderPrice": "16.5",
     "orderCompletedTime": "19.12.2019, 20:19:53"
@@ -74,17 +74,17 @@
   {
     "orderID": "9",
     "row": 6,
-    "tableID": "r4",
-    "waiterName": "Zaur",
-    "orderStatus": "canceled",
+    "table": "r4",
+    "waiter": "Zaur",
+    "orderStatus": "not completed",
     "orderPrice": "24.9",
-    "orderCompletedTime": "19.12.2019, 21:19:22"
+    "orderCompletedTime": "---"
   },
   {
     "orderID": "10",
     "row": 3,
-    "tableID": "b3",
-    "waiterName": "Zaur",
+    "table": "b3",
+    "waiter": "Zaur",
     "orderStatus": "completed",
     "orderPrice": "27",
     "orderCompletedTime": "19.12.2019, 20:34:11"

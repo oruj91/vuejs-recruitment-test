@@ -35,7 +35,7 @@
         "title": "pizza",
         "quantity": "1",
         "itemPrice": "15",
-        "status": "preparing"
+        "status": "canceled"
       },
       {
         "number": "2",
