@@ -26,5 +26,82 @@
     ],
     "orderTime": "17:19",
     "waitTimeInMinutes": "12"
+  },
+  {
+    "orderID": "3",
+    "orderInfo": [
+      {
+        "number": "1",
+        "title": "pizza",
+        "quantity": "1",
+        "itemPrice": "15",
+        "status": "preparing"
+      },
+      {
+        "number": "2",
+        "title": "Coca-cola middle",
+        "quantity": "3",
+        "itemPrice": "2",
+        "status": "given"
+      },
+      {
+        "number": "3",
+        "title": "French fries",
+        "quantity": "2",
+        "itemPrice": "3",
+        "status": "given"
+      },
+      {
+        "number": "4",
+        "title": "Salad",
+        "quantity": "2",
+        "itemPrice": "2.7",
+        "status": "preparing"
+      }
+    ],
+    "orderTime": "17:49",
+    "waitTimeInMinutes": "15"
+  },
+  {
+    "orderID": "5",
+    "orderInfo": [
+      {
+        "number": "1",
+        "title": "soup",
+        "quantity": "1",
+        "itemPrice": "4",
+        "status": "given"
+      },
+      {
+        "number": "2",
+        "title": "Salad",
+        "quantity": "2",
+        "itemPrice": "4.5",
+        "status": "given"
+      },
+      {
+        "number": "3",
+        "title": "Fried potatoes",
+        "quantity": "2",
+        "itemPrice": "3.2",
+        "status": "preparing"
+      },
+      {
+        "number": "4",
+        "title": "Lachmajun",
+        "quantity": "2",
+        "itemPrice": "1.4",
+        "status": "given"
+      },
+      {
+        "number": "5",
+        "title": "Bread",
+        "quantity": "1",
+        "itemPrice": "0.5",
+        "status": "given"
+      }
+    ],
+    "orderTime": "18:13",
+    "waitTimeInMinutes": "13"
   }
 ]
