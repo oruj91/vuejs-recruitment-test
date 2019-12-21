@@ -1,92 +1,107 @@
 [
   {
     "orderID": "1",
-    "row": 2,
-    "table": "a2",
-    "waiter": "Murtuz",
-    "orderStatus": "completed",
-    "orderPrice": "22",
-    "orderCompletedTime": "19.12.2019, 15:19:53"
-  },
-  {
-    "orderID": "2",
-    "row": 1,
-    "table": "v3",
-    "waiter": "Murtuz",
-    "orderStatus": "completed",
-    "orderPrice": "41.3",
-    "orderCompletedTime": "19.12.2019, 15:29:53"
+    "info": [
+      {
+        "orderItemNumber": "1",
+        "title": "Shawarma meat in bread",
+        "quantity": "1",
+        "itemPrice": "3.2",
+        "status": "preparing"
+      },
+      {
+        "orderItemNumber": "2",
+        "title": "Chicken cutlets",
+        "quantity": "2",
+        "itemPrice": "5.4",
+        "status": "given"
+      },
+      {
+        "orderItemNumber": "3",
+        "title": "shawarma chicken in bread",
+        "quantity": "1",
+        "itemPrice": "2.5",
+        "status": "canceled"
+      }
+    ],
+    "orderTime": "17:19",
+    "waitTimeInMinutes": "12"
   },
   {
     "orderID": "3",
-    "row": 2,
-    "table": "m2",
-    "waiter": "Kamran",
-    "orderStatus": "not completed",
-    "orderPrice": "62.0",
-    "orderCompletedTime": "---"
-  },
-  {
-    "orderID": "4",
-    "row": 3,
-    "table": "a3",
-    "waiter": "Murtuz",
-    "orderStatus": "completed",
-    "orderPrice": "14.3",
-    "orderCompletedTime": "19.12.2019, 17:19:26"
+    "info": [
+      {
+        "orderItemNumber": "1",
+        "title": "pizza",
+        "quantity": "1",
+        "itemPrice": "15",
+        "status": "canceled"
+      },
+      {
+        "orderItemNumber": "2",
+        "title": "Coca-cola middle",
+        "quantity": "3",
+        "itemPrice": "2",
+        "status": "given"
+      },
+      {
+        "orderItemNumber": "3",
+        "title": "French fries",
+        "quantity": "2",
+        "itemPrice": "3",
+        "status": "given"
+      },
+      {
+        "orderItemNumber": "4",
+        "title": "Salad",
+        "quantity": "2",
+        "itemPrice": "2.7",
+        "status": "preparing"
+      }
+    ],
+    "orderTime": "17:49",
+    "waitTimeInMinutes": "15"
   },
   {
     "orderID": "5",
-    "row": 4,
-    "table": "g3",
-    "waiter": "Kamran",
-    "orderStatus": "not completed",
-    "orderPrice": "23.9",
-    "orderCompletedTime": "---"
-  },
-  {
-    "orderID": "6",
-    "row": 1,
-    "table": "a4",
-    "waiter": "Kamran",
-    "orderStatus": "completed",
-    "orderPrice": "7",
-    "orderCompletedTime": "19.12.2019, 19:20:25"
-  },
-  {
-    "orderID": "7",
-    "row": 5,
-    "table": "f23",
-    "waiter": "Murtuz",
-    "orderStatus": "not completed",
-    "orderPrice": "10",
-    "orderCompletedTime": "---"
-  },
-  {
-    "orderID": "8",
-    "row": 7,
-    "table": "d10",
-    "waiter": "Zaur",
-    "orderStatus": "completed",
-    "orderPrice": "16.5",
-    "orderCompletedTime": "19.12.2019, 20:19:53"
-  },
-  {
-    "orderID": "9",
-    "row": 6,
-    "table": "r4",
-    "waiter": "Zaur",
-    "orderStatus": "not completed",
-    "orderPrice": "24.9",
-    "orderCompletedTime": "---"
-  },
-  {
-    "orderID": "10",
-    "row": 3,
-    "table": "b3",
-    "waiter": "Zaur",
-    "orderStatus": "completed",
-    "orderPrice": "27",
-    "orderCompletedTime": "19.12.2019, 20:34:11"
+    "info": [
+      {
+        "orderItemNumber": "1",
+        "title": "soup",
+        "quantity": "1",
+        "itemPrice": "4",
+        "status": "given"
+      },
+      {
+        "orderItemNumber": "2",
+        "title": "Salad",
+        "quantity": "2",
+        "itemPrice": "4.5",
+        "status": "given"
+      },
+      {
+        "orderItemNumber": "3",
+        "title": "Fried potatoes",
+        "quantity": "2",
+        "itemPrice": "3.2",
+        "status": "preparing"
+      },
+      {
+        "orderItemNumber": "4",
+        "title": "Lachmajun",
+        "quantity": "2",
+        "itemPrice": "1.4",
+        "status": "given"
+      },
+      {
+        "orderItemNumber": "5",
+        "title": "Bread",
+        "quantity": "1",
+        "itemPrice": "0.5",
+        "status": "given"
+      }
+    ],
+    "orderTime": "18:13",
+    "waitTimeInMinutes": "13"
   }
 ]
