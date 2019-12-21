@@ -1,5 +1,5 @@
-require('./public/orderItem')
 require('./public/orderList')
+require('./public/taskList')
 
 module.exports = {
   module: {

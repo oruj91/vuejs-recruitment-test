@@ -15,6 +15,7 @@ new Vue({
   router: router,
   store: store,
   created: function() {
+    this.$store.dispatch('fetchTaskList')
     this.$store.dispatch('fetchOrderList')
   },
   render: h => h(App)

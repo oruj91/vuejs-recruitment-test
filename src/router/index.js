@@ -1,6 +1,6 @@
 import VueRouter from 'vue-router'
-import OrderList from '../components/OrderList'
-import OrderItem from '../components/OrderItem'
+import taskList from '../components/TaskList'
+import OrderItem from '../components/OrderList'
 
 let homePath
 
@@ -14,7 +14,7 @@ else if (window.location.host === 'oruj91.github.io') {
 export default new VueRouter({
   mode: 'history',
   routes: [
-    { path: homePath, component: OrderList },
+    { path: homePath, component: taskList },
     { path: '/order/:id', component: OrderItem }
   ]
 })

@@ -40,8 +40,8 @@
 
 <script>
   import {homePath} from './api'
+  import TaskList from './components/TaskList'
   import OrderList from './components/OrderList'
-  import OrderItem from './components/OrderItem'
 
   export default {
     data: function () {
@@ -51,8 +51,47 @@
     },
     name: 'App',
     components: {
-      OrderList,
-      OrderItem
+      TaskList,
+      OrderList
     },
   };
 </script>
+
+<style>
+  .table-component__table {
+    width: 100%;
+    border: 1px solid #ebebeb;
+    border-collapse: collapse;
+  }
+  .table-component__table tr {
+    border-bottom: 1px solid #ebebeb;
+    background: #fff;
+  }
+  .table-component__table th,
+  .table-component__table td { padding: .5rem }
+
+  .table-component__th--sort-asc,
+  .table-component__th--sort-desc,
+  .table-component__th--sort:hover {
+    position: relative;
+    cursor: pointer;
+  }
+  .table-component__th--sort-asc::after {
+    position: absolute;
+    top: 10px;
+    right:0;
+    content: url("./assets/arrow-down.png");
+  }
+  .table-component__th--sort-desc::after {
+    position: absolute;
+    top: 10px;
+    right:0;
+    content: url("./assets/arrow-up.png");
+  }
+  .tableNotFinished { color: red }
+  .tableInfoStatus {
+    color: #fff;
+    padding: 0.3rem 1rem;
+    border-radius: 4px;
+  }
+</style>
