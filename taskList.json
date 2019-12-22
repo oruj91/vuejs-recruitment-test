@@ -6,7 +6,7 @@
     "waiter": "Tural",
     "status": "completed",
     "price": "22",
-    "completedTime": "19.12.2019, 15:19:53"
+    "completedTime": "18-12-2019 15:19:53"
   },
   {
     "id": "2",
@@ -15,7 +15,7 @@
     "waiter": "Tural",
     "status": "completed",
     "price": "41.3",
-    "completedTime": "19.12.2019, 15:29:53"
+    "completedTime": "18-12-2019 15:29:53"
   },
   {
     "id": "3",
@@ -51,7 +51,7 @@
     "waiter": "Kamran",
     "status": "completed",
     "price": "88.9",
-    "completedTime": "19.12.2019, 19:20:25"
+    "completedTime": "18-12-2019 19:20:25"
   },
   {
     "id": "7",
@@ -69,7 +69,7 @@
     "waiter": "Zaur",
     "status": "completed",
     "price": "41.3",
-    "completedTime": "19.12.2019, 20:19:53"
+    "completedTime": "18-12-2019 20:19:53"
   },
   {
     "id": "9",
@@ -87,6 +87,6 @@
     "waiter": "Zaur",
     "status": "completed",
     "price": "22",
-    "completedTime": "19.12.2019, 20:34:11"
+    "completedTime": "18-12-2019 20:34:11"
   }
 ]
