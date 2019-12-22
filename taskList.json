@@ -3,7 +3,7 @@
     "id": "1",
     "row": 2,
     "table": "a2",
-    "waiter": "Murtuz",
+    "waiter": "Tural",
     "status": "completed",
     "price": "22",
     "completedTime": "19.12.2019, 15:19:53"
@@ -12,7 +12,7 @@
     "id": "2",
     "row": 1,
     "table": "v3",
-    "waiter": "Murtuz",
+    "waiter": "Tural",
     "status": "completed",
     "price": "41.3",
     "completedTime": "19.12.2019, 15:29:53"
@@ -30,8 +30,8 @@
     "id": "4",
     "row": 3,
     "table": "a3",
-    "waiter": "Murtuz",
-    "status": "completed",
+    "waiter": "Tural",
+    "status": "not completed",
     "price": "22",
     "completedTime": "19.12.2019, 17:19:26"
   },
@@ -57,7 +57,7 @@
     "id": "7",
     "row": 5,
     "table": "f23",
-    "waiter": "Murtuz",
+    "waiter": "Tural",
     "status": "not completed",
     "price": "22",
     "completedTime": "---"
