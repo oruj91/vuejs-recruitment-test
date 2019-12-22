@@ -3,19 +3,19 @@
     "id": "1",
     "row": 2,
     "table": "a2",
-    "waiter": "Murtuz",
+    "waiter": "Tural",
     "status": "completed",
     "price": "22",
-    "completedTime": "19.12.2019, 15:19:53"
+    "completedTime": "18-12-2019 15:19:53"
   },
   {
     "id": "2",
     "row": 1,
     "table": "v3",
-    "waiter": "Murtuz",
+    "waiter": "Tural",
     "status": "completed",
     "price": "41.3",
-    "completedTime": "19.12.2019, 15:29:53"
+    "completedTime": "18-12-2019 15:29:53"
   },
   {
     "id": "3",
@@ -23,17 +23,17 @@
     "table": "m2",
     "waiter": "Kamran",
     "status": "not completed",
-    "price": "62.0",
+    "price": "88.9",
     "completedTime": "---"
   },
   {
     "id": "4",
     "row": 3,
     "table": "a3",
-    "waiter": "Murtuz",
-    "status": "completed",
-    "price": "14.3",
-    "completedTime": "19.12.2019, 17:19:26"
+    "waiter": "Tural",
+    "status": "not completed",
+    "price": "22",
+    "completedTime": "---"
   },
   {
     "id": "5",
@@ -41,7 +41,7 @@
     "table": "g3",
     "waiter": "Kamran",
     "status": "not completed",
-    "price": "23.9",
+    "price": "41.3",
     "completedTime": "---"
   },
   {
@@ -50,16 +50,16 @@
     "table": "a4",
     "waiter": "Kamran",
     "status": "completed",
-    "price": "7",
-    "completedTime": "19.12.2019, 19:20:25"
+    "price": "88.9",
+    "completedTime": "18-12-2019 19:20:25"
   },
   {
     "id": "7",
     "row": 5,
     "table": "f23",
-    "waiter": "Murtuz",
+    "waiter": "Tural",
     "status": "not completed",
-    "price": "10",
+    "price": "22",
     "completedTime": "---"
   },
   {
@@ -68,8 +68,8 @@
     "table": "d10",
     "waiter": "Zaur",
     "status": "completed",
-    "price": "16.5",
-    "completedTime": "19.12.2019, 20:19:53"
+    "price": "41.3",
+    "completedTime": "18-12-2019 20:19:53"
   },
   {
     "id": "9",
@@ -77,7 +77,7 @@
     "table": "r4",
     "waiter": "Zaur",
     "status": "not completed",
-    "price": "24.9",
+    "price": "88.9",
     "completedTime": "---"
   },
   {
@@ -86,7 +86,7 @@
     "table": "b3",
     "waiter": "Zaur",
     "status": "completed",
-    "price": "27",
-    "completedTime": "19.12.2019, 20:34:11"
+    "price": "22",
+    "completedTime": "18-12-2019 20:34:11"
   }
 ]

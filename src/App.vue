@@ -21,13 +21,13 @@
 
       <v-spacer></v-spacer>
 
-      <v-btn href="#" target="_blank" text>
-        <span class="mr-2">Add order</span>
+      <v-btn to="/add/order" text>
+        <span class="mr-2">ДОБАВИТЬ ЗАКАЗ</span>
         <v-icon>mdi-playlist-plus</v-icon>
       </v-btn>
 
-      <v-btn href="#" target="_blank" text>
-        <span class="mr-2">Login</span>
+      <v-btn to="/login" text>
+        <span class="mr-2">ВХОД</span>
         <v-icon>mdi-account-box</v-icon>
       </v-btn>
     </v-app-bar>
@@ -42,6 +42,7 @@
   import {homePath} from './api'
   import TaskList from './components/TaskList'
   import OrderList from './components/OrderList'
+  import OrderAdd from './components/OrderAdd'
 
   export default {
     data: function () {
@@ -52,7 +53,8 @@
     name: 'App',
     components: {
       TaskList,
-      OrderList
+      OrderList,
+      OrderAdd
     },
   };
 </script>
@@ -63,12 +65,16 @@
     border: 1px solid #ebebeb;
     border-collapse: collapse;
   }
+
   .table-component__table tr {
     border-bottom: 1px solid #ebebeb;
     background: #fff;
   }
+
   .table-component__table th,
-  .table-component__table td { padding: .5rem }
+  .table-component__table td {
+    padding: .5rem
+  }
 
   .table-component__th--sort-asc,
   .table-component__th--sort-desc,
@@ -76,19 +82,25 @@
     position: relative;
     cursor: pointer;
   }
+
   .table-component__th--sort-asc::after {
     position: absolute;
     top: 10px;
-    right:0;
+    right: 0;
     content: url("./assets/arrow-down.png");
   }
+
   .table-component__th--sort-desc::after {
     position: absolute;
     top: 10px;
-    right:0;
+    right: 0;
     content: url("./assets/arrow-up.png");
   }
-  .tableNotFinished { color: red }
+
+  .tableNotFinished {
+    color: red
+  }
+
   .tableInfoStatus {
     color: #fff;
     padding: 0.3rem 1rem;

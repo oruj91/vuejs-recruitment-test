@@ -8,32 +8,31 @@
           :show-filter="false"
           :show-caption="false"
         >
-          <table-column show="row" label="Row" :formatter="formatterRow" data-type="numeric"></table-column>
-          <table-column show="table" label="Table" :formatter="formatterTable"></table-column>
-          <table-column show="waiter" label="Waiter" :formatter="formatterWaiter"></table-column>
-          <table-column show="status" label="Status" :formatter="formatterStatus"></table-column>
-          <table-column show="price" label="Price" :formatter="formatterPrice" data-type="numeric"
+          <table-column show="row" label="Ряд" :formatter="formatterRow" data-type="numeric"></table-column>
+          <table-column show="table" label="Стол" :formatter="formatterTable"></table-column>
+          <table-column show="waiter" label="Официант" :formatter="formatterWaiter"></table-column>
+          <table-column show="status" label="Статус" :formatter="formatterStatus"></table-column>
+          <table-column show="price" label="Итоговая цена" :formatter="formatterPrice" data-type="numeric"
                         cell-class="text-right"></table-column>
-          <table-column show="completedTime" label="Completed time" :formatter="formatterCompletedTime"></table-column>
+          <table-column show="completedTime" label="Дата оплаты" :formatter="formatterCompletedTime"></table-column>
           <table-column label="" :sortable="false" :filterable="false">
             <template slot-scope="row">
-              <v-btn @click="showOrder(`${row.id}`)" small outlined color="indigo">bax</v-btn>
+              <v-btn @click="showOrder(`${row.id}`)" small outlined color="indigo">ПОДРОБНЕЕ</v-btn>
             </template>
           </table-column>
           <template slot="tfoot" slot-scope="{ rows }">
             <tr>
-              <th>Order total:</th>
+              <th>Все заказы:</th>
               <th>&nbsp;</th>
               <th>&nbsp;</th>
               <th>&nbsp;</th>
-              <th class="text-right"><span>{{taskListTotal}} AZN</span></th>
+              <th class="text-right"><span>{{taskListTotal}} ₼</span></th>
               <th>&nbsp;</th>
               <th>&nbsp;</th>
             </tr>
           </template>
         </table-component>
       </v-col>
-      <!-- <p>{{new Date().toLocaleString('ru-RU')}}</p>-->
     </v-row>
   </v-container>
 </template>
@@ -83,10 +82,10 @@
       },
       formatterPrice(val, rowProp) {
         if (rowProp.status === 'not completed') {
-          return `<span class="tableNotFinished">${val}</span> <span class="tableNotFinished">AZN</span>`
+          return `<span class="tableNotFinished">${val}</span> <span class="tableNotFinished">₼</span>`
         }
         else {
-          return `<span>${val}</span> <span>AZN</span>`
+          return `<span>${val}</span> <span>₼</span>`
         }
       },
       formatterCompletedTime(val, rowProp) {

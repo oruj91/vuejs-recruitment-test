@@ -1,6 +1,7 @@
 import VueRouter from 'vue-router'
 import taskList from '../components/TaskList'
 import OrderItem from '../components/OrderList'
+import OrderAdd from '../components/OrderAdd'
 
 let homePath
 
@@ -15,6 +16,7 @@ export default new VueRouter({
   mode: 'history',
   routes: [
     { path: homePath, component: taskList },
-    { path: '/order/:id', component: OrderItem }
+    { path: '/order/:id', component: OrderItem },
+    { path: '/add/order', component: OrderAdd },
   ]
 })

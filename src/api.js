@@ -11,3 +11,8 @@ export const taskList = mode === 'production'
 export const orderList = mode === 'production'
   ? 'https://oruj91.github.io/vuejs-recruitment-test/orderList.json'
   : 'http://localhost:8080/orderList.json'
+
+export const products = mode === 'production'
+  ? 'https://oruj91.github.io/vuejs-recruitment-test/products.json'
+  : 'http://localhost:8080/products.json'
+
