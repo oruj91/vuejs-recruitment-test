@@ -21,7 +21,7 @@
 
       <v-spacer></v-spacer>
 
-      <v-btn to="/add/order" text>
+      <v-btn to="/add/order" text class="mr-3">
         <span class="mr-2">ДОБАВИТЬ ЗАКАЗ</span>
         <v-icon>mdi-playlist-plus</v-icon>
       </v-btn>
@@ -40,23 +40,14 @@
 
 <script>
   import {homePath} from './api'
-  import TaskList from './components/TaskList'
-  import OrderList from './components/OrderList'
-  import OrderAdd from './components/OrderAdd'
 
   export default {
-    data: function () {
-      return {
-        homePath
+    computed: {
+      homePath() {
+        return homePath
       }
-    },
-    name: 'App',
-    components: {
-      TaskList,
-      OrderList,
-      OrderAdd
-    },
-  };
+    }
+  }
 </script>
 
 <style>

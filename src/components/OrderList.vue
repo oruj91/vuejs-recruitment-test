@@ -64,7 +64,7 @@
         this.$store.dispatch('finishTask', id)
       },
       formatterPrice(val, rowProp) {
-        const amount = rowProp.quantity * rowProp.itemPrice
+        const amount = (rowProp.quantity * rowProp.itemPrice).toFixed(2)
         return `<span>${amount} ₼</span>`
       },
       formatterStatus(val) {

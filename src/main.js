@@ -20,6 +20,10 @@ new Vue({
     this.$store.dispatch('fetchTaskList')
     this.$store.dispatch('fetchOrderList')
     this.$store.dispatch('fetchProducts')
+
+    setInterval(function () {
+      // console.log('set')
+    }, 2000)
   },
   render: h => h(App)
 }).$mount('#app')
