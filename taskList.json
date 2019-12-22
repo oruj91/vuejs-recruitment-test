@@ -23,7 +23,7 @@
     "table": "m2",
     "waiter": "Kamran",
     "status": "not completed",
-    "price": "62.0",
+    "price": "88.9",
     "completedTime": "---"
   },
   {
@@ -32,7 +32,7 @@
     "table": "a3",
     "waiter": "Murtuz",
     "status": "completed",
-    "price": "14.3",
+    "price": "22",
     "completedTime": "19.12.2019, 17:19:26"
   },
   {
@@ -41,7 +41,7 @@
     "table": "g3",
     "waiter": "Kamran",
     "status": "not completed",
-    "price": "23.9",
+    "price": "41.3",
     "completedTime": "---"
   },
   {
@@ -50,7 +50,7 @@
     "table": "a4",
     "waiter": "Kamran",
     "status": "completed",
-    "price": "7",
+    "price": "88.9",
     "completedTime": "19.12.2019, 19:20:25"
   },
   {
@@ -59,7 +59,7 @@
     "table": "f23",
     "waiter": "Murtuz",
     "status": "not completed",
-    "price": "10",
+    "price": "22",
     "completedTime": "---"
   },
   {
@@ -68,7 +68,7 @@
     "table": "d10",
     "waiter": "Zaur",
     "status": "completed",
-    "price": "16.5",
+    "price": "41.3",
     "completedTime": "19.12.2019, 20:19:53"
   },
   {
@@ -77,7 +77,7 @@
     "table": "r4",
     "waiter": "Zaur",
     "status": "not completed",
-    "price": "24.9",
+    "price": "88.9",
     "completedTime": "---"
   },
   {
@@ -86,7 +86,7 @@
     "table": "b3",
     "waiter": "Zaur",
     "status": "completed",
-    "price": "27",
+    "price": "22",
     "completedTime": "19.12.2019, 20:34:11"
   }
 ]

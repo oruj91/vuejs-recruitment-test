@@ -6,29 +6,30 @@
         "orderItemNumber": "1",
         "title": "Shawarma meat in bread",
         "quantity": "1",
-        "itemPrice": "3.2",
+        "itemPrice": "2",
         "status": "preparing"
       },
       {
         "orderItemNumber": "2",
         "title": "Chicken cutlets",
         "quantity": "2",
-        "itemPrice": "5.4",
+        "itemPrice": "5",
         "status": "given"
       },
       {
         "orderItemNumber": "3",
         "title": "shawarma chicken in bread",
         "quantity": "1",
-        "itemPrice": "2.5",
+        "itemPrice": "10",
         "status": "canceled"
       }
     ],
+    "totalPrice": "22",
     "orderTime": "17:19",
     "waitTimeInMinutes": "12"
   },
   {
-    "orderID": "3",
+    "orderID": "2",
     "info": [
       {
         "orderItemNumber": "1",
@@ -41,7 +42,7 @@
         "orderItemNumber": "2",
         "title": "Coca-cola middle",
         "quantity": "3",
-        "itemPrice": "2",
+        "itemPrice": "5",
         "status": "given"
       },
       {
@@ -54,43 +55,44 @@
       {
         "orderItemNumber": "4",
         "title": "Salad",
-        "quantity": "2",
-        "itemPrice": "2.7",
+        "quantity": "1",
+        "itemPrice": "5.3",
         "status": "preparing"
       }
     ],
+    "totalPrice": "41.3",
     "orderTime": "17:49",
     "waitTimeInMinutes": "15"
   },
   {
-    "orderID": "5",
+    "orderID": "3",
     "info": [
       {
         "orderItemNumber": "1",
         "title": "soup",
-        "quantity": "1",
+        "quantity": "3",
         "itemPrice": "4",
         "status": "given"
       },
       {
         "orderItemNumber": "2",
         "title": "Salad",
-        "quantity": "2",
+        "quantity": "6",
         "itemPrice": "4.5",
         "status": "given"
       },
       {
         "orderItemNumber": "3",
         "title": "Fried potatoes",
-        "quantity": "2",
+        "quantity": "8",
         "itemPrice": "3.2",
         "status": "preparing"
       },
       {
         "orderItemNumber": "4",
         "title": "Lachmajun",
-        "quantity": "2",
-        "itemPrice": "1.4",
+        "quantity": "7",
+        "itemPrice": "3.4",
         "status": "given"
       },
       {
@@ -101,7 +103,253 @@
         "status": "given"
       }
     ],
+    "totalPrice": "88.9",
     "orderTime": "18:13",
     "waitTimeInMinutes": "13"
+  },
+  {
+    "orderID": "4",
+    "info": [
+      {
+        "orderItemNumber": "1",
+        "title": "Shawarma meat in bread",
+        "quantity": "1",
+        "itemPrice": "2",
+        "status": "preparing"
+      },
+      {
+        "orderItemNumber": "2",
+        "title": "Chicken cutlets",
+        "quantity": "2",
+        "itemPrice": "5",
+        "status": "given"
+      },
+      {
+        "orderItemNumber": "3",
+        "title": "shawarma chicken in bread",
+        "quantity": "1",
+        "itemPrice": "10",
+        "status": "canceled"
+      }
+    ],
+    "totalPrice": "22",
+    "orderTime": "17:19",
+    "waitTimeInMinutes": "12"
+  },
+  {
+    "orderID": "5",
+    "info": [
+      {
+        "orderItemNumber": "1",
+        "title": "pizza",
+        "quantity": "1",
+        "itemPrice": "15",
+        "status": "canceled"
+      },
+      {
+        "orderItemNumber": "2",
+        "title": "Coca-cola middle",
+        "quantity": "3",
+        "itemPrice": "5",
+        "status": "given"
+      },
+      {
+        "orderItemNumber": "3",
+        "title": "French fries",
+        "quantity": "2",
+        "itemPrice": "3",
+        "status": "given"
+      },
+      {
+        "orderItemNumber": "4",
+        "title": "Salad",
+        "quantity": "1",
+        "itemPrice": "5.3",
+        "status": "preparing"
+      }
+    ],
+    "totalPrice": "41.3",
+    "orderTime": "17:49",
+    "waitTimeInMinutes": "15"
+  },
+  {
+    "orderID": "6",
+    "info": [
+      {
+        "orderItemNumber": "1",
+        "title": "soup",
+        "quantity": "3",
+        "itemPrice": "4",
+        "status": "given"
+      },
+      {
+        "orderItemNumber": "2",
+        "title": "Salad",
+        "quantity": "6",
+        "itemPrice": "4.5",
+        "status": "given"
+      },
+      {
+        "orderItemNumber": "3",
+        "title": "Fried potatoes",
+        "quantity": "8",
+        "itemPrice": "3.2",
+        "status": "preparing"
+      },
+      {
+        "orderItemNumber": "4",
+        "title": "Lachmajun",
+        "quantity": "7",
+        "itemPrice": "3.4",
+        "status": "given"
+      },
+      {
+        "orderItemNumber": "5",
+        "title": "Bread",
+        "quantity": "1",
+        "itemPrice": "0.5",
+        "status": "given"
+      }
+    ],
+    "totalPrice": "88.9",
+    "orderTime": "18:13",
+    "waitTimeInMinutes": "13"
+  },
+  {
+    "orderID": "7",
+    "info": [
+      {
+        "orderItemNumber": "1",
+        "title": "Shawarma meat in bread",
+        "quantity": "1",
+        "itemPrice": "2",
+        "status": "preparing"
+      },
+      {
+        "orderItemNumber": "2",
+        "title": "Chicken cutlets",
+        "quantity": "2",
+        "itemPrice": "5",
+        "status": "given"
+      },
+      {
+        "orderItemNumber": "3",
+        "title": "shawarma chicken in bread",
+        "quantity": "1",
+        "itemPrice": "10",
+        "status": "canceled"
+      }
+    ],
+    "totalPrice": "22",
+    "orderTime": "17:19",
+    "waitTimeInMinutes": "12"
+  },
+  {
+    "orderID": "8",
+    "info": [
+      {
+        "orderItemNumber": "1",
+        "title": "pizza",
+        "quantity": "1",
+        "itemPrice": "15",
+        "status": "canceled"
+      },
+      {
+        "orderItemNumber": "2",
+        "title": "Coca-cola middle",
+        "quantity": "3",
+        "itemPrice": "5",
+        "status": "given"
+      },
+      {
+        "orderItemNumber": "3",
+        "title": "French fries",
+        "quantity": "2",
+        "itemPrice": "3",
+        "status": "given"
+      },
+      {
+        "orderItemNumber": "4",
+        "title": "Salad",
+        "quantity": "1",
+        "itemPrice": "5.3",
+        "status": "preparing"
+      }
+    ],
+    "totalPrice": "41.3",
+    "orderTime": "17:49",
+    "waitTimeInMinutes": "15"
+  },
+  {
+    "orderID": "9",
+    "info": [
+      {
+        "orderItemNumber": "1",
+        "title": "soup",
+        "quantity": "3",
+        "itemPrice": "4",
+        "status": "given"
+      },
+      {
+        "orderItemNumber": "2",
+        "title": "Salad",
+        "quantity": "6",
+        "itemPrice": "4.5",
+        "status": "given"
+      },
+      {
+        "orderItemNumber": "3",
+        "title": "Fried potatoes",
+        "quantity": "8",
+        "itemPrice": "3.2",
+        "status": "preparing"
+      },
+      {
+        "orderItemNumber": "4",
+        "title": "Lachmajun",
+        "quantity": "7",
+        "itemPrice": "3.4",
+        "status": "given"
+      },
+      {
+        "orderItemNumber": "5",
+        "title": "Bread",
+        "quantity": "1",
+        "itemPrice": "0.5",
+        "status": "given"
+      }
+    ],
+    "totalPrice": "88.9",
+    "orderTime": "18:13",
+    "waitTimeInMinutes": "13"
+  },
+  {
+    "orderID": "10",
+    "info": [
+      {
+        "orderItemNumber": "1",
+        "title": "Shawarma meat in bread",
+        "quantity": "1",
+        "itemPrice": "2",
+        "status": "preparing"
+      },
+      {
+        "orderItemNumber": "2",
+        "title": "Chicken cutlets",
+        "quantity": "2",
+        "itemPrice": "5",
+        "status": "given"
+      },
+      {
+        "orderItemNumber": "3",
+        "title": "shawarma chicken in bread",
+        "quantity": "1",
+        "itemPrice": "10",
+        "status": "canceled"
+      }
+    ],
+    "totalPrice": "22",
+    "orderTime": "17:19",
+    "waitTimeInMinutes": "12"
   }
 ]
